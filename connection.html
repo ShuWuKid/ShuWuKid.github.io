@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言</title>
+    <link rel="stylesheet" type="text/css" href="./cs/showData.css"/>
+    <link rel="stylesheet" type="text/css" href="./cs/bootstrap.min.css"/>
+    <style>
+        .inputFrame{
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1 class="textCenter" style="width: 250px;height: 60px;">留言</h1>
+    </div>
+    <div class="content">
+        <form>
+            <div class="left" style="float: left">
+            <div class="form-group">
+
+                <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">邮箱</label>
+                <input type="email" style="width: 300px;" class="form-control inputFrame" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="邮箱">
+                <small class="form-text text-dark">你输入的邮箱我会保密的</small><p/>
+
+                <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">名字</label>
+                <input class="form-control form-control-lg" style="width: 150px" type="text" placeholder="输入你的名字" id="inputLarge">
+                <small class="form-text text-dark">让我认识你</small>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend class="mt-4">你的性别:</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                            男
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                            女
+                        </label>
+                    </div>
+                </fieldset>
+                <label for="exampleSelect1" class="form-label mt-4">所在地:</label>
+                <select class="form-select" style="width: 200px;" id="exampleSelect1">
+                    <option>衡阳</option>
+                    <option>郴州</option>
+                    <option>邵阳</option>
+                    <option>长沙</option>
+                </select>
+            </div>
+            </div>
+            <div class="right" style="float: left; margin-left: 100px;">
+                <div class="form-group">
+                    <label for="exampleTextarea" class="form-label mt-4">请留下你宝贵的意见:</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3" style="height: 215px;width: 600px;"></textarea>
+                    <button type="submit" style="margin-left:120px;margin-top: 100px;" class="btn btn-primary">提交</button>
+                    <button type="reset" style="margin-left:120px;margin-top: 100px;" class="btn btn-primary">重新写</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

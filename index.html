@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shuwukid</title>
+    <script type="text/javascript" src="./jquery/jquery-3.6.0.js"></script>
+    <link rel="stylesheet"  href="./cs/navigation.css" type="text/css" />
+    <style>
+        #navigation img{
+            height: 25%;
+            margin-left: 15%;
+            margin-top: 10%;
+            border-radius: 40%;
+        }
+        #titleName{
+            position: fixed;
+            top:0;
+            /*left: 1100px;*/
+            left:15%;
+            width: 500px;
+            height: 90px;
+            border-radius: 5px;
+            -webkit-box-shadow: 17px 8px 56px 16px rgba(13,66,55,0.48);
+            -moz-box-shadow: 17px 8px 56px 16px rgba(13,66,55,0.48);
+            box-shadow: 17px 8px 56px 16px rgba(13,66,55,0.48);
+            background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+        }
+    </style>
+</head>
+<body>
+<div id="titleName">
+    <h1 class="textCenter" style="width: 500px;height: 90px">ShuWuKid 个人网站</h1>
+</div>
+<div id="navigation">
+    <img src="image/像素化的俺.jpg" alt="shuwukid">
+    <ul>
+        <li>
+            <div class="textCenter indexContent">
+                <a >首页</a>
+            </div>
+        </li>
+        <li >
+            <div class="textCenter myImage">
+                <a>图片</a>
+            </div>
+        </li>
+        <li >
+            <div class="textCenter regard">
+                <a>关于我</a>
+            </div>
+        </li>
+        <li >
+            <div class="textCenter connection">
+                <a>留言</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div id="showData">
+
+</div>
+
+<script type="text/javascript">
+    $("#showData").load("./indexContent.html");
+    $(".regard").click(function (){
+        $("#showData").load("./regard.html");
+    });
+    $(".indexContent").click(function (){
+        $("#showData").load("./indexContent.html");
+    });
+    $(".myImage").click(function (){
+        $("#showData").load("./myImage.html");
+    });
+    $(".connection").click(function (){
+        $("#showData").load("./connection.html");
+    });
+</script>
+</body>
+</html>
